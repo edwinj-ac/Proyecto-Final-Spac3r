@@ -1,0 +1,901 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  width: 100%; }
+
+body {
+  background-image: linear-gradient(to bottom, #02072d, #020d34, #01113a, #001441, #011748, #011e52, #01265d, #002e68, #003d78, #004d87, #005d96, #086da5);
+  color: white;
+  font-family: 'Kanit', sans-serif; }
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+.container-fluid {
+  width: 100%;
+  color: white;
+  background-color: #02072d; }
+
+nav {
+  width: 100vw;
+  height: 65px;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #02072d; }
+  nav div {
+    /*width: 30%;*/
+    font-size: 4.5rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px; }
+  nav img {
+    height: 45px;
+    width: 42px;
+    margin-left: 5px;
+    margin-bottom: 5px; }
+  nav p {
+    margin-left: 1rem;
+    color: white;
+    display: none; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px; }
+    nav ul li {
+      color: white;
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin-right: 10px; }
+    nav ul .nav-item a, nav ul #navbarDropdownMenuLink {
+      color: white; }
+  nav .dropdown-menu {
+    background-color: #0c89cc;
+    border-radius: 10px;
+    /*width: 180px;*/ }
+    nav .dropdown-menu .dropdown-item {
+      border-radius: 10px; }
+  nav .navbar-toggler {
+    background-color: white; }
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 80px; }
+  nav img {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px; }
+  nav p {
+    margin-left: 2.5rem;
+    display: inline; }
+  nav ul li {
+    font-size: 2rem;
+    margin-right: 30px; } }
+
+.div-general {
+  width: 100%;
+  /*height: 300vh;*/
+  height: 200vh;
+  display: grid;
+  grid-template-areas: "video video" "technologies technologies" "logos logos" "redes redes" "info info" "footer footer";
+  margin: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1.5fr 1.5fr 0.3fr 1fr 0.2fr;
+  /*grid-template-rows: 6fr 3fr 1.5fr 2fr 2.5fr 1fr;*/
+  justify-content: center;
+  /*horizontal*/
+  align-content: center;
+  /*vertical*/ }
+
+.video-head {
+  grid-area: video;
+  width: 100%; }
+  .video-head video {
+    /* width: 100%;
+        height: 100%;*/
+    width: 100%;
+    height: 100%;
+    margin-top: 25px; }
+  .video-head #descrip-info-head {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 320px;
+    background-color: rgba(5, 83, 138, 0.366);
+    margin-top: 70px; }
+    .video-head #descrip-info-head h1 {
+      color: white;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      position: absolute;
+      bottom: 100px;
+      margin-left: 40px;
+      margin-right: 40px; }
+
+.cont-technologies {
+  grid-area: technologies; }
+  .cont-technologies .techonlogies-content {
+    /*height: 300vh;*/
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "app  web" "avr ai" "rob game";
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    /*horizontal*/
+    align-content: center;
+    /*vertical*/
+    text-align: center; }
+    .cont-technologies .techonlogies-content h3 {
+      font-size: 1.5rem;
+      font-weight: 400; }
+    .cont-technologies .techonlogies-content img {
+      height: 80px;
+      width: 100px;
+      border-radius: 5px; }
+    .cont-technologies .techonlogies-content p {
+      display: none; }
+    .cont-technologies .techonlogies-content #techs-apps {
+      grid-area: app;
+      justify-self: center;
+      align-self: center; }
+    .cont-technologies .techonlogies-content #techs-web {
+      grid-area: web;
+      justify-self: center;
+      align-self: center; }
+    .cont-technologies .techonlogies-content #techs-avr {
+      grid-area: avr;
+      justify-self: center;
+      align-self: center; }
+    .cont-technologies .techonlogies-content #techs-avr > h3 {
+      margin-left: 5px;
+      margin-top: 10px; }
+    .cont-technologies .techonlogies-content #techs-ai {
+      grid-area: ai;
+      justify-self: center;
+      align-self: center; }
+    .cont-technologies .techonlogies-content #techs-rob {
+      grid-area: rob;
+      justify-self: center;
+      align-self: center; }
+    .cont-technologies .techonlogies-content #techs-game {
+      grid-area: game;
+      justify-self: center;
+      align-self: center; }
+
+.cont-logos-techs {
+  grid-area: logos;
+  text-align: center; }
+  .cont-logos-techs h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .cont-logos-techs .logos-tech {
+    /*height: 300vh;*/
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-content: stretch;*/ }
+  .cont-logos-techs img {
+    height: 55px;
+    width: 55px; }
+
+.redes_sociales-cont {
+  grid-area: redes; }
+  .redes_sociales-cont #info-redes_sociales h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 20px; }
+  .redes_sociales-cont #info-redes_sociales p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-left: 20px;
+    margin-top: 10px; }
+  .redes_sociales-cont .content-redesSociales {
+    width: 100%;
+    /*height: 300vh;*/
+    height: 200px;
+    display: grid;
+    grid-template-areas: "title title buttons buttons" "title title buttons buttons";
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    /*horizontal*/
+    align-content: center;
+    /*vertical*/
+    text-align: center; }
+    .redes_sociales-cont .content-redesSociales #info-redes_sociales {
+      grid-area: title;
+      justify-self: center;
+      align-self: center; }
+    .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales {
+      grid-area: buttons; }
+  .redes_sociales-cont #buttons-cont-redes_sociales {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: end;
+    /*horizontal*/
+    align-content: space-between;
+    /*vertical*/
+    text-align: center; }
+    .redes_sociales-cont #buttons-cont-redes_sociales button {
+      height: 60px;
+      width: 60px;
+      border-color: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: transparent;
+      background-repeat: none;
+      background-size: cover;
+      background-position: center; }
+    .redes_sociales-cont #buttons-cont-redes_sociales #facebook-btn {
+      background-image: url(../assets/icons/facebook.png);
+      align-self: end;
+      justify-self: end;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border-radius: 15px; }
+    .redes_sociales-cont #buttons-cont-redes_sociales #instagram-btn {
+      background-image: url(../assets/icons/instagram.png);
+      border-radius: 15px;
+      align-self: end;
+      justify-self: start;
+      margin-bottom: 10px; }
+    .redes_sociales-cont #buttons-cont-redes_sociales #tiktok-btn {
+      background-image: url(../assets/icons/tik-tok.png);
+      border-radius: 15px;
+      justify-self: end;
+      margin-right: 10px; }
+    .redes_sociales-cont #buttons-cont-redes_sociales #whatsapp-btn {
+      background-image: url(../assets/icons/whatsapp.png); }
+
+.contact-info {
+  grid-area: info; }
+  .contact-info h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400; }
+  .contact-info form {
+    display: grid;
+    grid-template-areas: "empresa nombre" "tel email" "comentario comentario" "comentario comentario" "submit submit";
+    margin-left: 2px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+  .contact-info #contact-content {
+    font-size: 1.5rem; }
+    .contact-info #contact-content #form-empresa {
+      grid-area: empresa; }
+    .contact-info #contact-content #form-name {
+      grid-area: nombre; }
+    .contact-info #contact-content #form-tel {
+      grid-area: tel; }
+    .contact-info #contact-content #form-email {
+      grid-area: email; }
+    .contact-info #contact-content #form-coment {
+      grid-area: comentario; }
+    .contact-info #contact-content #form-submit {
+      grid-area: submit;
+      justify-self: center;
+      margin: 0; }
+    .contact-info #contact-content input[type=text], .contact-info #contact-content input[type=number], .contact-info #contact-content input[type=email], .contact-info #contact-content textarea {
+      border: none;
+      border-bottom: 2.5px solid #0c89cc;
+      color: white;
+      background-color: #01113a;
+      height: 25px;
+      border-radius: 5px;
+      font-weight: 100; }
+    .contact-info #contact-content input[type=submit] {
+      width: 80px;
+      height: 35px;
+      background-color: #01113a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      border-bottom: 2px solid #0c89cc; }
+    .contact-info #contact-content textarea {
+      width: 350px;
+      height: 100px;
+      border: none;
+      border-bottom: 2.5px solid #0c89cc;
+      background-color: #01113a;
+      margin-top: 20px;
+      color: white;
+      font-family: 'Kanit', sans-serif; }
+
+@media only screen and (max-width: 360px) {
+  .div-general {
+    height: 224vh; }
+  .video-head #descrip-info-head {
+    height: 210px; }
+    .video-head #descrip-info-head h1 {
+      bottom: 0px; } }
+
+@media only screen and (max-width: 390px) {
+  .video-head #descrip-info-head {
+    height: 250px; }
+    .video-head #descrip-info-head h1 {
+      bottom: 30px; } }
+
+@media only screen and (min-width: 390px) {
+  .video-head #descrip-info-head {
+    height: 305px; } }
+
+@media only screen and (min-width: 412px) {
+  .video-head #descrip-info-head {
+    height: 355px; } }
+
+@media only screen and (min-width: 1024px) {
+  .video-head #descrip-info-head {
+    height: 750px; }
+    .video-head #descrip-info-head h1 {
+      margin-bottom: 200px;
+      font-size: 8rem;
+      font-weight: 600;
+      bottom: 150px;
+      text-align: center;
+      margin-right: 0; }
+  .div-general {
+    width: 100%;
+    /*height: 300vh;*/
+    height: 300vh;
+    display: grid;
+    grid-template-areas: "video video" "technologies technologies" "logos logos" "redes redes" "info info" "footer footer";
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1.5fr 2fr 1.5fr 0.3fr 1fr 0.2fr;
+    /*grid-template-rows: 6fr 3fr 1.5fr 2fr 2.5fr 1fr;*/
+    justify-content: center;
+    /*horizontal*/
+    align-content: center;
+    /*vertical*/ }
+  .cont-technologies .techonlogies-content {
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px; }
+    .cont-technologies .techonlogies-content div {
+      height: 95%;
+      width: 200px;
+      margin-top: 15px; }
+      .cont-technologies .techonlogies-content div h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 15px; }
+      .cont-technologies .techonlogies-content div #text_cont-tech {
+        margin-top: 0; }
+    .cont-technologies .techonlogies-content p {
+      display: inline;
+      font-weight: 100;
+      font-size: 1.5rem;
+      text-align: justify;
+      margin-top: 15px; }
+    .cont-technologies .techonlogies-content img {
+      height: 125px;
+      width: 200px;
+      border-radius: 10px; }
+  .cont-technologies #title--cont-tech {
+    margin-top: 0px; }
+  .cont-technologies .logos-tech img {
+    height: 70px;
+    width: 70px; }
+  .redes_sociales-cont .content-redesSociales {
+    width: 100%;
+    /*height: 300vh;*/
+    height: 200px;
+    display: grid;
+    grid-template-areas: "title title buttons buttons" "title title buttons buttons";
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    /*horizontal*/
+    align-content: center;
+    /*vertical*/
+    text-align: center; }
+    .redes_sociales-cont .content-redesSociales #info-redes_sociales h3 {
+      font-size: 4rem;
+      font-weight: 400; }
+    .redes_sociales-cont .content-redesSociales #info-redes_sociales p {
+      font-size: 2rem;
+      font-weight: 100; }
+    .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales {
+      margin-top: 10px;
+      margin-left: 10px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      justify-content: center;
+      /*horizontal*/
+      align-content: space-between;
+      /*vertical*/ }
+      .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales button {
+        height: 80px;
+        width: 80px;
+        border-color: none;
+        border-radius: 20px; }
+      .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales #facebook-btn {
+        align-self: center;
+        justify-self: center; }
+      .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales #instagram-btn {
+        align-self: center;
+        justify-self: center; }
+      .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales #tiktok-btn {
+        justify-self: center;
+        align-self: center; }
+      .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales #whatsapp-btn {
+        justify-self: center;
+        align-self: center; }
+  .contact-info #contact-content {
+    margin-top: 20px; }
+    .contact-info #contact-content #form-empresa {
+      grid-area: empresa;
+      justify-self: end;
+      margin-right: 20px; }
+    .contact-info #contact-content #form-name {
+      grid-area: nombre; }
+    .contact-info #contact-content #form-tel {
+      grid-area: tel;
+      justify-self: end;
+      margin-right: 20px; }
+    .contact-info #contact-content #form-email {
+      grid-area: email; }
+    .contact-info #contact-content #form-coment {
+      grid-area: comentario;
+      display: flex;
+      justify-self: center; }
+    .contact-info #contact-content #form-submit {
+      grid-area: submit;
+      justify-self: center;
+      margin-top: 10px; }
+    .contact-info #contact-content input[type=text], .contact-info #contact-content input[type=number], .contact-info #contact-content input[type=email], .contact-info #contact-content textarea {
+      width: 400px;
+      margin-left: 10px; } }
+
+.footer {
+  width: 100%;
+  grid-area: footer;
+  margin-top: 45px; }
+  .footer footer {
+    display: grid;
+    grid-template-areas: "logo datos nav" "terminos datos nav";
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: white;
+    background-color: #0c89cc;
+    align-items: center;
+    justify-items: center; }
+    .footer footer #logo-footer {
+      grid-area: logo;
+      display: flex; }
+      .footer footer #logo-footer p {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 5px;
+        font-size: 1.5rem; }
+      .footer footer #logo-footer img {
+        height: 40px;
+        width: 40px; }
+    .footer footer #terms--footer {
+      grid-area: terminos;
+      align-self: center;
+      justify-self: center; }
+    .footer footer #data--footer {
+      grid-area: datos; }
+    .footer footer #links--footer {
+      grid-area: nav;
+      display: grid; }
+
+@media only screen and (min-width: 1024px) {
+  .footer footer {
+    height: 120px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #0c89cc; }
+    .footer footer #logo-footer {
+      display: flex;
+      align-items: center; }
+      .footer footer #logo-footer p {
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-left: 8px; }
+      .footer footer #logo-footer img {
+        height: 80px;
+        width: 80px; }
+    .footer footer #terms--footer {
+      font-size: 1.3rem;
+      font-weight: 100; }
+    .footer footer #data--footer {
+      font-size: 1.4rem;
+      font-weight: 100; }
+    .footer footer #links--footer {
+      font-size: 1.5rem; }
+      .footer footer #links--footer a {
+        margin-right: 10px; } }
+
+.cont-general {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px; }
+
+.cont-decript-tech {
+  /*width: 100%;
+    height: 340px;*/
+  width: 100%;
+  height: 340px;
+  display: grid;
+  grid-template-areas: "title title title" "video video video" "desc desc desc" "btn btn btn";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+  justify-content: center;
+  margin-bottom: 10px; }
+  .cont-decript-tech h2 {
+    grid-area: title;
+    justify-self: center; }
+  .cont-decript-tech button {
+    /*width: 120px;
+        height: 35px;*/
+    width: 120px;
+    height: 35px;
+    background-color: #0c89cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 2px solid white; }
+  .cont-decript-tech video {
+    grid-area: video;
+    width: 95%;
+    justify-self: center;
+    border-radius: 16px; }
+  .cont-decript-tech p {
+    grid-area: desc;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: initial;
+    font-size: 1.3rem; }
+  .cont-decript-tech button {
+    grid-area: btn;
+    justify-self: center; }
+
+@media only screen and (max-width: 360px) {
+  .cont-decript-tech {
+    width: 100%;
+    height: 340px; }
+    .cont-decript-tech video {
+      width: 70%; } }
+
+@media only screen and (max-width: 390px) {
+  .cont-decript-tech {
+    width: 100%;
+    height: 320px; }
+    .cont-decript-tech video {
+      width: 75%; } }
+
+@media only screen and (min-width: 390px) {
+  .cont-decript-tech {
+    height: 300px; }
+    .cont-decript-tech video {
+      width: 70%; } }
+
+@media only screen and (min-width: 412px) {
+  .cont-decript-tech {
+    height: 300px; }
+    .cont-decript-tech video {
+      width: 70%; } }
+
+@media only screen and (min-width: 1024px) {
+  .cont-general {
+    margin-top: 90px; }
+  .cont-decript-tech {
+    /* width: 100%;
+        height: 400px;*/
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-areas: "title title title title" "video video desc desc" "video video desc desc" "video video btn btn";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    justify-content: center;
+    margin-bottom: 10px; }
+    .cont-decript-tech h2 {
+      grid-area: title;
+      text-align: start;
+      width: 100%;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 600; }
+    .cont-decript-tech video {
+      grid-area: video;
+      width: 80%; }
+    .cont-decript-tech p {
+      grid-area: desc;
+      text-align: justify;
+      font-size: 1.8rem;
+      align-self: center;
+      justify-self: center; }
+    .cont-decript-tech button {
+      grid-area: btn;
+      justify-self: center; } }
+
+.cont-projects {
+  margin-top: 60px;
+  width: 100%;
+  height: 180vh;
+  display: grid;
+  grid-template-areas: "mobile mobile mobile" "web web web" "avr avr avr" "ai ai ai" "iot iot iot" "games games games";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1.5fr);
+  justify-content: center;
+  margin-top: 80px; }
+  .cont-projects h2 {
+    font-size: 2rem;
+    font-weight: 400; }
+  .cont-projects img {
+    width: 80px;
+    height: 150px;
+    border-radius: 5px; }
+  .cont-projects p {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center; }
+  .cont-projects .apps-mobile {
+    width: 100%;
+    height: 150px;
+    grid-area: mobile;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .apps-web {
+    width: 100%;
+    height: 150px;
+    grid-area: web;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .ar-vr_cont {
+    width: 100%;
+    height: 150px;
+    grid-area: avr;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .arti-intell {
+    width: 100%;
+    height: 150px;
+    grid-area: ai;
+    display: flex;
+    flex-direction: column; }
+    .cont-projects .arti-intell h2 {
+      grid-area: title;
+      margin-left: 2px; }
+    .cont-projects .arti-intell #project1--arti-intell {
+      grid-area: cont1;
+      margin-right: 10px; }
+    .cont-projects .arti-intell #project2--arti-intell {
+      grid-area: cont2;
+      margin-right: 5px; }
+    .cont-projects .arti-intell #project3--arti-intell {
+      grid-area: cont3;
+      margin-right: 5px; }
+    .cont-projects .arti-intell #project4--arti-intell {
+      grid-area: cont4;
+      margin-right: 5px; }
+  .cont-projects .rob-iot-cont {
+    width: 100%;
+    height: 150px;
+    grid-area: iot;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .games_cont {
+    width: 100%;
+    height: 150px;
+    grid-area: games;
+    display: flex;
+    flex-direction: column; }
+    .cont-projects .games_cont h2 {
+      grid-area: title;
+      margin-left: 2px; }
+    .cont-projects .games_cont #project1--games_cont {
+      grid-area: cont1;
+      margin-right: 10px; }
+    .cont-projects .games_cont #project2--games_cont {
+      grid-area: cont2;
+      margin-right: 5px; }
+    .cont-projects .games_cont #project3--games_cont {
+      grid-area: cont3;
+      margin-right: 5px; }
+    .cont-projects .games_cont #project4--games_cont {
+      grid-area: cont4;
+      margin-right: 5px; }
+
+#carouselExampleIndicators {
+  height: 100%; }
+
+.carousel-inner {
+  height: 350px; }
+
+@media only screen and (min-width: 1024px) {
+  .cont-projects {
+    margin-top: 80px;
+    height: 300vh; }
+    .cont-projects h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 20px; }
+    .cont-projects img {
+      width: 80px;
+      height: 300px;
+      border-radius: 10px; }
+    .cont-projects button {
+      width: 100px;
+      height: 30px;
+      margin-top: 15px;
+      font-size: 1.2rem; }
+    .cont-projects .apps-mobile, .cont-projects .apps-web, .cont-projects .ar-vr_cont, .cont-projects .arti-intell, .cont-projects .rob-iot-cont, .cont-projects .games_cont {
+      height: 220px; }
+    .cont-projects .cont-info-dev {
+      justify-self: center;
+      text-align: center; } }
+
+#title-section {
+  margin-top: 60px; }
+  #title-section h3 {
+    font-size: 2.5rem; }
+  #title-section p {
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px; }
+
+.card {
+  background-color: #0c89cc;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .card img {
+    height: 180px; }
+  .card #imgSeguridad {
+    width: 100px;
+    align-self: center; }
+  .card #imgBrazo {
+    width: 200px;
+    align-self: center; }
+
+.cont-info-project {
+  width: 100%;
+  height: 150vh;
+  display: grid;
+  grid-template-areas: "video video video video video" "descr descr descr descr descr" ". img1 img1 img1 ." ". img2 img2 img2 ." ". img3 img3 img3 ." ". . contBtn . .";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-content: center;
+  align-content: center;
+  margin-left: 5px;
+  margin-top: 65px; }
+  .cont-info-project img {
+    width: 90px;
+    height: 70px; }
+  .cont-info-project #video--proyect-info {
+    grid-area: video;
+    margin-left: 15px;
+    justify-self: center; }
+  .cont-info-project #description-video {
+    grid-area: descr; }
+  .cont-info-project #cont-img-1 {
+    grid-area: img1; }
+  .cont-info-project #cont-img-2 {
+    grid-area: img2; }
+  .cont-info-project #cont-img-3 {
+    grid-area: img3; }
+  .cont-info-project #cont-button--info-project {
+    grid-area: contBtn; }
+    .cont-info-project #cont-button--info-project button {
+      margin-top: 20px;
+      margin-left: 70px; }
+  .cont-info-project #cont-button--info-project button {
+    width: 120px;
+    height: 35px;
+    background-color: #0c89cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 2px solid white;
+    margin-right: 65px; }
+
+.img-descr-info {
+  display: grid;
+  grid-template-areas: "img img img" "descrpImg descrpImg descrpImg";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.4fr 1fr;
+  gap: 5px;
+  margin-top: 10px; }
+  .img-descr-info img {
+    grid-area: img;
+    justify-self: center; }
+  .img-descr-info p {
+    grid-area: descrpImg; }
+
+@media only screen and (min-width: 1024px) {
+  .cont-info-project {
+    margin-top: 100px; }
+  .img-descr-info {
+    grid-template-areas: "img img descrpImg descrpImg" "img img descrpImg descrpImg";
+    grid-template-columns: 0.5fr 0.5fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10px;
+    align-content: center; }
+    .img-descr-info img {
+      height: 120px;
+      width: 180px; }
+    .img-descr-info p {
+      align-self: center; }
+  #cont-button--info-project button {
+    margin-right: 0; } }
+
+.cont-contactanos-page {
+  height: 60vh;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .cont-contactanos-page p {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px; }
+
+@media only screen and (min-width: 1024px) {
+  .cont-contactanos-page {
+    height: 80vh; }
+  .footer #footer--contact-page {
+    height: 100px;
+    margin-top: 50px; }
+  .cont-info-contact {
+    height: 150px; }
+    .cont-info-contact #eslogan {
+      margin-top: 50px;
+      font-size: 3.5rem; } }
